@@ -31,6 +31,7 @@ if (!check_table(SCHEDULE_TABLE_NAME)) {
 define('DUKE_URL', 'http://www.cbssports.com/collegebasketball/teams/%1/DUKE/');
 define('IMAGE_URL', 'http://sports.cbsimg.net/images/collegebasketball/logos/90x90/matchup/');
 define('ACC_URL', 'http://www.cbssports.com/collegebasketball/standings/conference/ACC');
+
 /**
  * Simple HTML Dom
  */
@@ -39,8 +40,6 @@ require('shd.php');
 /**
  * Schedule
  */
-
-
 $schedule_url = str_replace('%1', 'schedule', DUKE_URL);
 $schedule_html = file_get_html($schedule_url);
 
